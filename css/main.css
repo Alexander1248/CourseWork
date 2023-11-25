@@ -163,7 +163,8 @@ body {
 }
 
 .result-block {
-    display: flex;
+    background-color: transparent;
+    color: var(--color-contrast);
 
     width: calc(100% - 50px);
 
@@ -178,4 +179,19 @@ body {
     border-style: ridge;
     border-radius: 40px;
     border-color: var(--color-accent);
+    transition: .5s ease;
+}
+
+
+#filtered-page-list:has(> .result-block:hover) > .result-block:not(.result-block:hover) {
+    filter: blur(3px);
+}
+
+.result-block:hover {
+    transform: scale(1.01);
+}
+.result-block:active {
+    transition: .1s ease;
+    transform: scale(0.99);
+
 }

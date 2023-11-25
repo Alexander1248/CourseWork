@@ -1,27 +1,32 @@
 var pages = {
     "Visual Studio" : [
         "vs.html", 
+        "",
         "Microsoft", [
             "C++", "C#"
         ]],
     "VS Code" : [
         "vscode.html", 
+        "",
         "Microsoft", [
             "C++", "C#", "Java", "HTML", "CSS", "JavaScript"
         ]],
     "Intellij IDEA" : [
-        "intellij.html",  
+        "intellij.html",
+        "",  
         "Jet Brains", [
             "Java"
         ]],
     "CLion" : [
         "clion.html", 
+        "",
         "Jet Brains", [
             "C++"
         ]
     ],
     "Rider" : [
         "rider.html",  
+        "",
         "Jet Brains", [
             "C#"
         ]
@@ -46,12 +51,13 @@ function search() {
     var count = 0;
     for (var key in pages) {
         if (text.length != 0 && !key.toLowerCase().match(text.toLowerCase())) continue;
-        if (dc != "" && dc != pages[key][1]) continue;
-        if (pl != "" && !pages[key][2].includes(pl)) continue;
+        if (dc != "" && dc != pages[key][2]) continue;
+        if (pl != "" && !pages[key][3].includes(pl)) continue;
         
-        var div = document.createElement('div');
+        var div = document.createElement('button');
         div.className = "result-block";
         div.innerHTML = key;
+        div.setAttribute("onclick", 'window.location.href = \"' + pages[key][0] + '\"');
         list.append(div);
         count++;
     }
