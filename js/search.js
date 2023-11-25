@@ -1,32 +1,32 @@
 var pages = {
     "Visual Studio" : [
         "vs.html", 
-        "",
+        "https://upload.wikimedia.org/wikipedia/commons/2/2c/Visual_Studio_Icon_2022.svg",
         "Microsoft", [
             "C++", "C#"
         ]],
     "VS Code" : [
         "vscode.html", 
-        "",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg",
         "Microsoft", [
             "C++", "C#", "Java", "HTML", "CSS", "JavaScript"
         ]],
     "Intellij IDEA" : [
         "intellij.html",
-        "",  
+        "https://upload.wikimedia.org/wikipedia/commons/9/9c/IntelliJ_IDEA_Icon.svg",  
         "Jet Brains", [
             "Java"
         ]],
     "CLion" : [
         "clion.html", 
-        "",
+        "https://upload.wikimedia.org/wikipedia/commons/6/62/Clion.svg",
         "Jet Brains", [
             "C++"
         ]
     ],
     "Rider" : [
         "rider.html",  
-        "",
+        "https://upload.wikimedia.org/wikipedia/commons/6/6e/JetBrains_Rider_Icon.svg",
         "Jet Brains", [
             "C#"
         ]
@@ -56,7 +56,10 @@ function search() {
         
         var div = document.createElement('button');
         div.className = "result-block";
-        div.innerHTML = key;
+
+        div.innerHTML = '<img src=\"' + pages[key][1] +'\" width="100" height="100"> <br>'; 
+        div.innerHTML += key;
+
         div.setAttribute("onclick", 'window.location.href = \"' + pages[key][0] + '\"');
         list.append(div);
         count++;
