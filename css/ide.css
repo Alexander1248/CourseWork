@@ -1,0 +1,11 @@
+body {
+    --color-primary: #040c24;
+    --color-secondary: #0a205a;
+    --color-neutral: #3a4c7a;
+
+    --color-accent: #9da5bd;
+    --color-contrast: #ffffff;
+
+    background-color: var(--color-primary);
+    color: var(--color-contrast);
+}
