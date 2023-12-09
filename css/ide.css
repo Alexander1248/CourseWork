@@ -1,11 +1,80 @@
-body {
-    --color-primary: #040c24;
-    --color-secondary: #0a205a;
-    --color-neutral: #3a4c7a;
+@import url("universal.css");
 
-    --color-accent: #9da5bd;
-    --color-contrast: #ffffff;
+h1 {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 24pt;
+}
 
-    background-color: var(--color-primary);
-    color: var(--color-contrast);
+h2 {
+    text-align: center;
+}
+
+/* Text with image */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 30px 30px;
+}
+.container p {
+    width: 100%;
+    height: auto;
+
+    font-size: 14pt;
+    text-align: center;
+}
+.container img {
+    width: 70%;
+    height: auto;
+    max-height: 500px;
+    margin: 0 0;
+
+    filter: drop-shadow(15px 10px 10px #111);
+}
+
+@media screen and (min-width: 1100px) {
+    .container p {
+        width: 50%;
+    }
+    .container img {
+        width: 40%;
+        max-height: 300px;
+        margin: 0 5%;
+    }
+}
+
+
+/* Card container */
+
+.card-container {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card-container > li {
+    margin: 10px;
+    text-align: center;
+}
+.card-container > li img {
+    width: 100px;
+    height: auto;
+}
+.card-container > li svg {
+    width: 100px;
+    height: auto;
+}
+
+
+
+
+main {
+    border-style: solid;
+    border-radius: 1rem;
+    border-width: 1px;
+    margin: 1rem;
 }

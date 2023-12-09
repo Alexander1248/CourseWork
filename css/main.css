@@ -1,17 +1,6 @@
-body {
-    --color-primary: #040c24;
-    --color-secondary: #0a205a;
-    --color-neutral: #3a4c7a;
-
-    --color-accent: #9da5bd;
-    --color-contrast: #ffffff;
-
-    background-color: var(--color-primary);
-    color: var(--color-contrast);
-}
+@import url("universal.css");
 
 /* Grid layout */
-
 /* Установим стили по умолчанию для контейнера */
 .container {
     display: grid;
@@ -193,5 +182,8 @@ body {
 .result-block:active {
     transition: .1s ease;
     transform: scale(0.99);
+}
 
+@media (max-width: 700px) {
+    /* TODO: Filter collapse */
 }

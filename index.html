@@ -10,7 +10,18 @@
     </head>
     <body onload="search()">
         <header>
+            <section class="top-nav">
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
+                <ul class="menu">
+                    <li><a href="index.html">Поиск</a></li>
+                    <li><a href="about.html">О Авторе</a></li>
+                </ul>
+            </section>
         </header>
+
         <main class="container">
             <div class="search">
                 <div class="search-field">
@@ -33,6 +44,10 @@
                         None
                     </div>
                     <div>
+                        <input type="radio" name="pl" value="C" onchange="search()">
+                        C
+                    </div>
+                    <div>
                         <input type="radio" name="pl" value="C++" onchange="search()">
                         C++
                     </div>
@@ -41,8 +56,28 @@
                         C#
                     </div>
                     <div>
+                        <input type="radio" name="pl" value="CUDA" onchange="search()">
+                        CUDA
+                    </div>
+                    <div>
+                        <input type="radio" name="pl" value="F#" onchange="search()">
+                        F#
+                    </div>
+                    <div>
                         <input type="radio" name="pl" value="Java" onchange="search()">
                         Java
+                    </div>
+                    <div>
+                        <input type="radio" name="pl" value="Kotlin" onchange="search()">
+                        Kotlin
+                    </div>
+                    <div>
+                        <input type="radio" name="pl" value="Python" onchange="search()">
+                        Python
+                    </div>
+                    <div>
+                        <input type="radio" name="pl" value="Ruby" onchange="search()">
+                        Ruby
                     </div>
                     <div>
                         <input type="radio" name="pl" value="HTML" onchange="search()">
@@ -78,7 +113,6 @@
             <div id="filtered-page-list"></div>
         </main>
         <footer>
-            
         </footer>
     </body>
 </html>

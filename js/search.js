@@ -3,34 +3,20 @@ var pages = {
         "vs.html", 
         "https://upload.wikimedia.org/wikipedia/commons/2/2c/Visual_Studio_Icon_2022.svg",
         "Microsoft", [
-            "C++", "C#"
+            "C", "C++", "C#", "F#", "HTML", "CSS", "JavaScript"
         ]],
     "VS Code" : [
         "vscode.html", 
         "https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg",
         "Microsoft", [
-            "C++", "C#", "Java", "HTML", "CSS", "JavaScript"
+            "C", "C++", "C#", "CUDA", "Java", "HTML", "CSS", "JavaScript"
         ]],
     "Intellij IDEA" : [
         "intellij.html",
         "https://upload.wikimedia.org/wikipedia/commons/9/9c/IntelliJ_IDEA_Icon.svg",  
         "Jet Brains", [
-            "Java"
-        ]],
-    "CLion" : [
-        "clion.html", 
-        "https://upload.wikimedia.org/wikipedia/commons/6/62/Clion.svg",
-        "Jet Brains", [
-            "C++"
-        ]
-    ],
-    "Rider" : [
-        "rider.html",  
-        "https://upload.wikimedia.org/wikipedia/commons/6/6e/JetBrains_Rider_Icon.svg",
-        "Jet Brains", [
-            "C#"
-        ]
-    ]
+            "Java", "Kotlin", "Python", "Ruby", "HTML", "CSS", "JavaScript"
+        ]]
 };
 
 function enterPressed(){
