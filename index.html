@@ -1,122 +1,112 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width= device-width, initial-scale=1.0">
-        <title>IDEs</title> <!-- Заголовок страницы -->
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="icon" href="https://www.svgrepo.com/show/503406/language-xml.svg">
-        <script src="js/search.js"></script>
-    </head>
-    <body onload="search()">
-        <header>
-            <section class="top-nav">
-                <a href="index.html">
-                    <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>language_xml</title> <rect width="24" height="24" fill="none"></rect> <path d="M12.89,3l2,.4L11.11,21l-2-.4L12.89,3m6.7,9L16,8.41V5.58L22.42,12,16,18.41V15.58L19.59,12m-18,0L8,5.58V8.41L4.41,12,8,15.58v2.83Z"></path> </g></svg>
-                </a>
-                <input id="menu-toggle" type="checkbox" />
-                <label class='menu-button-container' for="menu-toggle">
-                    <div class='menu-button'></div>
-                </label>
-                <ul class="menu">
-                    <li><a href="index.html">Поиск</a></li>
-                    <li><a href="about.html">О Авторе</a></li>
-                </ul>
-            </section>
-        </header>
 
-        <main class="container">
-            <div class="search">
-                <div class="search-field">
-                    <input id="search-field" placeholder="IDE name..." autocomplete="off" onkeypress="enterPressed()">
-                    <button id="search-button" onclick="search()" oncom="search()">
-                        <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 7V8.2C20 9.88016 20 10.7202 19.673 11.362C19.3854 11.9265 18.9265 12.3854 18.362 12.673C17.7202 13 16.8802 13 15.2 13H4M4 13L8 9M4 13L8 17" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                    </button>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>About</title> <!-- Заголовок страницы -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="https://www.svgrepo.com/show/503406/language-xml.svg">
+</head>
+
+<body>
+    <header>
+        <section class="top-nav">
+            <a href="index.html">
+                <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>language_xml</title> <rect width="24" height="24" fill="none"></rect> <path d="M12.89,3l2,.4L11.11,21l-2-.4L12.89,3m6.7,9L16,8.41V5.58L22.42,12,16,18.41V15.58L19.59,12m-18,0L8,5.58V8.41L4.41,12,8,15.58v2.83Z"></path> </g></svg>
+            </a>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li><a href="search.html">Поиск</a></li>
+                <li><a href="about.html">О Авторе</a></li>
+            </ul>
+        </section>
+    </header>
+    <main>
+        <section>
+            <h1>Новости</h1>
+            <div id="news">
+                <a class="post" href="https://habr.com/ru/articles/762084/">
+                    <img
+                        src="https://raw.githubusercontent.com/abrahamhba/programming-languages-logos/master/src/java/java.svg">
+                    <h2>Вышла Java 21</h2>
+                    <p>
+                        Вышла общедоступная версия Java 21.
+                        В этот релиз попало около 2500 закрытых задач и 15 JEP'ов.
+                        Java 21 является LTS-релизом, а значит у него будут выходить обновления как минимум 
+                        5 лет с момента выхода.
+                    </p>
+                </a>
+                <a class="post" href="https://habr.com/ru/companies/bar/articles/774494/">
+                    <img
+                        src="https://habrastorage.org/r/w1560/webt/9w/fe/0q/9wfe0qv4opfmnr3nv-qopwptklw.jpeg">
+                    <h2>IntelliJ IDEA 2023.2</h2>
+                    <p>
+                        Это ретроспективный пост фичей IntelliJ IDEA 2023.2, 
+                        в преддверии 2023.3 (которая сейчас в состоянии Beta 2). Несмотря на то, что 
+                        эта версия вышла еще в июле, не все в точности помнят, что же там произошло, и 
+                        какую версию они вообще используют.
+                    </p>
+                </a>
+                <a class="post" href="https://habr.com/ru/companies/ru_mts/articles/762558/">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg">
+                    <h2>Плагины для Visual Studio Code, актуальные в 2023 году</h2>
+                    <p>
+                        Подборка плагинов для Visual Studio Code, 
+                        которые могут упростить работу. Представленные инструменты позволяют увеличить 
+                        продуктивность работы, вести контроль версий, работать с отладкой и т. п. Разные 
+                        плагины для разных задач.
+                    </p>
+                </a>
+                <a class="post" href="https://habr.com/ru/articles/768238/">
+                    <img
+                        src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/ac6/608/b9b/ac6608b9b24aa46e46a4c5058ff4152d.png">
+                    <h2>JetBrains выпустила новую IDE для работы с документацией Writerside</h2>
+                    <p>
+                        Компания JetBrains выпустила инструмент под названием Writerside в режиме раннего доступа. 
+                        Этот инструмент разработан для помощи разработчикам и техническим писателям в создании 
+                        технической документации. Writerside основан на внутреннем инструменте компании JetBrains, 
+                        который они использовали для создания документации к своим программным продуктам.
+                    </p>
+                </a>
+                <a class="post" href="https://habr.com/ru/news/771452/">
+                    <img
+                        src="https://habrastorage.org/getpro/habr/upload_files/ac9/ac1/ea9/ac9ac1ea920c1abd45ca253012f57dba.gif">
+                    <h2>Новый релиз VS Code 1.84</h2>
+                    <p>
+                        Вышел новый стабильный релиз Visual Studio Code за октябрь 2023 г. 
+                        В этой версии много обновлений, вот некоторые из ключевых моментов...
+                    </p>
+                </a>
+                <a class="post" href="https://habr.com/ru/news/753652/">
+                    <img
+                        src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/857/ab0/846/857ab08466b3bae01ae86b4c08eeab96.jpg">
+                    <h2>Исследователи безопасности обнаружили, что расширения для VS Code могут красть пользовательские токены аутентификации</h2>
+                    <p>
+                        Исследователи безопасности из Cycode обнаружили уязвимость в редакторе кода VS Code, 
+                        позволяющую сторонним расширениям получать доступ к хранилищу токенов на машине 
+                        пользователя. Таким образом злоумышленники могут украсть токены для GitHub или 
+                        других систем, с которыми работает VS Code.
+                    </p>
+                </a>
+                <a class="post" href="https://habr.com/ru/articles/757222/">
+                    <img
+                        src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/19c/41f/1b4/19c41f1b4efc208ed3e9d3443a1b7c89.jpg">
+                    <h2>Запускаем IDEA и CLion на Android</h2>
+                    <p>
+                        На современных Android телефонах и планшетах стоит отличное железо - многоядерные 
+                        CPU с несколькими гигабайтами памяти. Этого всего вполне хватит для запуска даже таких 
+                        тяжеловесных программ как IDEA и CLion.
+                    </p>
+                </a>
             </div>
-            <div class="filters">
-                <div class="filter-label">
-                    Filters
-                </div>
-                <div class="filter-group">
-                    <div class="filter-label">
-                        <label for="pl">Programming Language</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="pl" value="" checked="checked" onchange="search()">
-                        None
-                    </div>
-                    <div>
-                        <input type="radio" name="pl" value="C" onchange="search()">
-                        C
-                    </div>
-                    <div>
-                        <input type="radio" name="pl" value="C++" onchange="search()">
-                        C++
-                    </div>
-                    <div>
-                        <input type="radio" name="pl" value="C#" onchange="search()">
-                        C#
-                    </div>
-                    <div>
-                        <input type="radio" name="pl" value="CUDA" onchange="search()">
-                        CUDA
-                    </div>
-                    <div>
-                        <input type="radio" name="pl" value="F#" onchange="search()">
-                        F#
-                    </div>
-                    <div>
-                        <input type="radio" name="pl" value="Java" onchange="search()">
-                        Java
-                    </div>
-                    <div>
-                        <input type="radio" name="pl" value="Kotlin" onchange="search()">
-                        Kotlin
-                    </div>
-                    <div>
-                        <input type="radio" name="pl" value="Python" onchange="search()">
-                        Python
-                    </div>
-                    <div>
-                        <input type="radio" name="pl" value="Ruby" onchange="search()">
-                        Ruby
-                    </div>
-                    <div>
-                        <input type="radio" name="pl" value="HTML" onchange="search()">
-                        HTML
-                    </div>
-                    <div>
-                        <input type="radio" name="pl" value="CSS" onchange="search()">
-                        CSS
-                    </div>
-                    <div>
-                        <input type="radio" name="pl" value="JavaScript" onchange="search()">
-                        JavaScript
-                    </div>
-                </div>
-                <div class="filter-group">
-                    <div class="filter-label">
-                        <label for="dc">Developmer Company</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="dc" value="" checked="checked" onchange="search()">
-                        None
-                    </div>
-                    <div>
-                        <input type="radio" name="dc" value="Microsoft" onchange="search()">
-                        Microsoft
-                    </div>
-                    <div>
-                        <input type="radio" name="dc" value="Jet Brains" onchange="search()">
-                        Jet Brains
-                    </div>
-                </div>
-            </div>
-            <div id="filtered-page-list"></div>
-        </main>
-        <footer>
-        </footer>
-    </body>
-</html>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
