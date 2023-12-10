@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width= device-width, initial-scale=1.0">
     <title>About</title> <!-- Заголовок страницы -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/other.css">
     <link rel="icon" href="https://www.svgrepo.com/show/503406/language-xml.svg">
 </head>
 
@@ -14,7 +14,18 @@
     <header>
         <section class="top-nav">
             <a href="index.html">
-                <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>language_xml</title> <rect width="24" height="24" fill="none"></rect> <path d="M12.89,3l2,.4L11.11,21l-2-.4L12.89,3m6.7,9L16,8.41V5.58L22.42,12,16,18.41V15.58L19.59,12m-18,0L8,5.58V8.41L4.41,12,8,15.58v2.83Z"></path> </g></svg>
+                <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff"
+                    stroke-width="0.00024000000000000003">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <title>language_xml</title>
+                        <rect width="24" height="24" fill="none"></rect>
+                        <path
+                            d="M12.89,3l2,.4L11.11,21l-2-.4L12.89,3m6.7,9L16,8.41V5.58L22.42,12,16,18.41V15.58L19.59,12m-18,0L8,5.58V8.41L4.41,12,8,15.58v2.83Z">
+                        </path>
+                    </g>
+                </svg>
             </a>
             <input id="menu-toggle" type="checkbox" />
             <label class='menu-button-container' for="menu-toggle">
@@ -28,9 +39,126 @@
         </section>
     </header>
     <main>
-        <h1>Другие приложения для разработки</h1>
-        <section>
-        </section>
+        <h2>Инструменты</h2>
+        <ul class="cards">
+            <li class="card">
+                <div>
+                    <h3 class="card-title">Git</h3>
+                    <div class="card-content">
+                        <p>
+                            Git — распределённая система управления версиями. Проект был создан Линусом Торвальдсом
+                            для управления разработкой ядра Linux, первая версия выпущена 7 апреля 2005 года. Система
+                            спроектирована как набор программ, специально разработанных с учётом их использования в
+                            сценариях. Это позволяет удобно создавать специализированные системы контроля версий на
+                            базе Git или пользовательские интерфейсы.
+                        </p>
+                    </div>
+                </div>
+                <!-- <div class="card-link-wrapper">
+                    <a href="https://github.com/" class="card-link">Learn More</a>
+                </div> -->
+            </li>
+        </ul>
+        <h2>Облачные сервисы</h2>
+        <ul class="cards">
+            <li class="card">
+                <div>
+                    <h3 class="card-title">GitHub</h3>
+                    <div class="card-content">
+                        <p>
+                            GitHub — крупнейший веб-сервис для хостинга IT-проектов и их совместной разработки.
+                            <br>
+                            Веб-сервис основан на системе контроля версий Git и разработан на Ruby on Rails и
+                            Erlang компанией GitHub, Inc (ранее Logical Awesome). Сервис бесплатен для проектов
+                            с открытым исходным кодом и (с 2019 года) небольших частных проектов, предоставляя им
+                            все возможности (включая SSL), а для крупных корпоративных проектов предлагаются
+                            различные платные тарифные планы.
+                        </p>
+                    </div>
+                </div>
+                <div class="inline-shrink">
+                    <div class="card-link-wrapper">
+                        <a href="https://ru.wikipedia.org/wiki/GitHub" class="card-link">Подробнее</a>
+                    </div>
+
+                    <div class="card-link-wrapper">
+                        <a href="https://github.com/" class="card-link">Сайт</a>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <div>
+                    <h3 class="card-title">Microsoft Azure</h3>
+                    <div class="card-content">
+                        <p>
+                            Microsoft Azure — облачная платформа компании Microsoft. Предоставляет возможность
+                            разработки, выполнения приложений и хранения данных на серверах, расположенных в
+                            распределённых дата-центрах.
+                            <br>
+                            Облако Azure было анонсировано в октябре 2008 года под кодовым названием «Project Red
+                            Dog». Релиз состоялся 1 февраля 2010 года под названием «Windows Azure». В 2014 году
+                            платформа была переименована в Microsoft Azure.
+                        </p>
+                    </div>
+                </div>
+                <div class="inline-shrink">
+                    <div class="card-link-wrapper">
+                        <a href="https://ru.wikipedia.org/wiki/Microsoft_Azure" class="card-link">Подробнее</a>
+                    </div>
+
+                    <div class="card-link-wrapper">
+                        <a href="https://azure.microsoft.com/" class="card-link">Сайт</a>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <div>
+                    <h3 class="card-title">Oracle Cloud</h3>
+                    <div class="card-content">
+                        <p>
+                            Oracle Cloud — это служба облачных вычислений, предлагаемая Oracle Corporation,
+                            предоставляющая серверы, хранилища, сети, приложения и сервисы через глобальную
+                            сеть центров обработки данных Oracle Corporation. Компания позволяет предоставлять
+                            эти услуги по требованию через Интернет.
+                        </p>
+                    </div>
+                </div>
+                <div class="inline-shrink">
+                    <div class="card-link-wrapper">
+                        <a href="https://ru.wikipedia.org/wiki/Oracle_Cloud" class="card-link">Подробнее</a>
+                    </div>
+
+                    <div class="card-link-wrapper">
+                        <a href="https://www.oracle.com/cloud/" class="card-link">Сайт</a>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <div>
+                    <h3 class="card-title">Google Cloud Platform</h3>
+                    <div class="card-content">
+                        <p>
+                            Google Cloud Platform — предоставляемый компанией Google набор облачных служб,
+                            которые выполняются на той же самой инфраструктуре, которую Google использует
+                            для своих продуктов, предназначенных для конечных потребителей, таких как Google
+                            Search и YouTube. Кроме инструментов для управления, также предоставляется ряд
+                            модульных облачных служб, таких как облачные вычисления, хранение данных, анализ
+                            данных и машинное обучение. Для регистрации нужно иметь банковскую карту или банковский
+                            счет.
+                        </p>
+                    </div>
+                </div>
+                <div class="inline-shrink">
+                    <div class="card-link-wrapper">
+                        <a href="https://ru.wikipedia.org/wiki/Google_Cloud_Platform" class="card-link">Подробнее</a>
+                    </div>
+
+                    <div class="card-link-wrapper">
+                        <a href="https://cloud.google.com/" class="card-link">Сайт</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </main>
     <footer>
     </footer>

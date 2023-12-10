@@ -4,17 +4,13 @@
 /* Установим стили по умолчанию для контейнера */
 .container {
     display: grid;
-    /* Включаем Grid Layout */
     grid-template-areas:
         "search"
         "filters"
         "list";
     grid-template-columns: 1fr;
-    /* Одна равная ширина столбца */
     grid-template-rows: auto auto 1fr auto;
-    /* Автоматическая высота для header и footer, остальное занимает оставшееся пространство */
     gap: 10px;
-    /* Расстояние между элементами */
 }
 
 /* Медиа-запрос для планшетов и больших экранов */
@@ -25,7 +21,6 @@
             "list filters"
             "list filters";
         grid-template-columns: 3fr 1fr;
-        /* Боковая панель будет шире */
         grid-template-rows: auto 1fr auto;
     }
 }
@@ -38,7 +33,6 @@
             "list filters"
             "list filters";
         grid-template-columns: 2fr 1fr;
-        /* Боковая панель будет еще шире */
         grid-template-rows: auto 1fr auto;
     }
 }
@@ -61,9 +55,10 @@
     margin: 10px;
     padding: 10px;
 
-    border-style: ridge;
+    border-style: solid;
     border-radius: 40px;
-    border-color: var(--color-accent);
+    border-color: white;
+    border-width: 2px;
 }
 .filter-label {
     text-align: center;
@@ -84,10 +79,10 @@
     justify-content: space-around;
     align-items: center;
 
-    border-color: var(--color-accent);
-
-    border-style: ridge;
+    border-color: white;
+    border-style: solid;
     border-radius: 20px;
+    border-width: 2px;
     
 
     width: 100%;
@@ -98,7 +93,7 @@
 #search-field {
     background-color: transparent;
     border-color: transparent;
-    color: var(--color-contrast);
+    color: white;
 
     outline: none;
 
@@ -114,10 +109,11 @@
 /* Search button */
 #search-button {
     background-color: transparent;
-    border-color: var(--color-accent);
+    border-color: white;
     
     border-radius: 0 17px 17px 0;
-    border-style: ridge;
+    border-style: solid;
+    border-width: 2px;
 
     width: 70px;
     height: 40px;
@@ -146,14 +142,15 @@
     height: auto;
     font-size: 20px;
 
-    border-style: ridge;
+    border-style: solid;
     border-radius: 40px;
-    border-color: var(--color-accent);
+    border-color: white;
+    border-width: 2px;
 }
 
 .result-block {
     background-color: transparent;
-    color: var(--color-contrast);
+    color: white;
 
     width: calc(100% - 50px);
 
@@ -165,9 +162,11 @@
 
     font-size: medium;
 
-    border-style: ridge;
+    border-style: solid;
     border-radius: 40px;
-    border-color: var(--color-accent);
+    border-color: white;
+    border-width: 2px;
+    
     transition: .5s ease;
 }
 

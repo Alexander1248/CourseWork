@@ -1,13 +1,16 @@
 body {
-    --color-primary: #040c24;
-    --color-secondary: #0a205a;
-    --color-neutral: #3a4c7a;
+    --dark-blue: hsl(227, 100%, 13%);
+    --blue: hsl(242, 100%, 64%);
+    --light-blue: hsl(192, 100%, 64%);
+    --lavender: hsl(242, 100%, 74%);
+    --red: hsl(0, 100%, 38%);
+    --dark-red: hsl(0, 100%, 25%);
 
-    --color-accent: #9da5bd;
-    --color-contrast: #ffffff;
+    --black: #000;
+    --white: #fff;
 
-    background-color: var(--color-primary);
-    color: var(--color-contrast);
+    background-color: var(--dark-blue);
+    color: var(--white);
 }
 
 h1 {
@@ -18,22 +21,22 @@ h1 {
 
 /* Anchor decoration */
 a:link {
-    color: var(--color-contrast);
+  color: var(--white);
 }
 /* visited link */
 
 a:visited {
-    color: var(--color-accent);
+    color: var(--blue);
 }
 /* mouse over link */
 
 a:hover {
-    color: var(--color-neutral);
+    color: var(--lavender);
 }
 
 /* selected link */
 a:active {
-    color: #800000;
+    color: var(--dark-red);
 }
 
 /* Menu style */
@@ -42,9 +45,9 @@ a:active {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #2c2f33;
-    background: linear-gradient(to right, #0a205a, #040c24);
-    color: #FFF;
+    background-color: var(--dark-blue);
+    background: linear-gradient(to right, var(--blue), var(--dark-blue));
+    color: white;
     height: 30px;
     padding: 0.6em 1em;
 }
@@ -82,7 +85,7 @@ a:active {
 .menu-button::before,
 .menu-button::after {
   display: block;
-  background-color: #fff;
+  background-color: white;
   position: absolute;
   height: 4px;
   width: 30px;
@@ -106,7 +109,7 @@ a:active {
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button {
-  background: rgba(255, 255, 255, 0);
+  background: transparent;
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button::after {
@@ -149,10 +152,10 @@ a:active {
     padding: 0.5em 0;
     width: 100%;
     color: white;
-    background-color: var(--color-primary);
+    background-color: color-mix(in lab, var(--blue) 20%, var(--dark-blue) 80%)
   }
   .menu > li:not(:last-child) {
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid black;
   }
 }
 
@@ -171,7 +174,7 @@ a:active {
     width: 0%;
     height: 3px;
     
-    background: var(--color-contrast);
+    background: white;
     
     position: absolute;
     bottom: -3px;
@@ -184,22 +187,16 @@ a:active {
 }
 
 .menu a:link {
-    color: var(--color-contrast);
+    color: white;
 }
-/* visited link */
-
 .menu a:visited {
-    color: var(--color-contrast);
+    color: white;
 }
-/* mouse over link */
-
 .menu a:hover {
-    color: var(--color-contrast);
+    color: white;
 }
-
-/* selected link */
 .menu a:active {
-    color: var(--color-contrast);
+    color: white;
 }
 
 .icon {
