@@ -61,6 +61,11 @@
 #projects {
     grid-area: projects;
 }
+
+#info p {
+    text-align: justify;
+}
+
 .contact {
     vertical-align: middle;
 
@@ -99,6 +104,7 @@
     height: auto;
 }
 .project-description {
+    text-align: justify;
 
 }
 .project-gallery {

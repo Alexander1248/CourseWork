@@ -25,6 +25,9 @@
 .post h2 {
     text-align: center;
 }
+.post p {
+    text-align: justify;
+}
 
 .post img {
     width: 20rem;
