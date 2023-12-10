@@ -1,5 +1,124 @@
 @import url("universal.css");
 
 .container {
-    
+    display: grid;
+}
+
+/* Grid layout */
+/* Установим стили по умолчанию для контейнера */
+.container {
+    display: grid;
+    /* Включаем Grid Layout */
+    grid-template-areas:
+        "image"
+        "contacts"
+        "info"
+        "projects";
+    grid-template-columns: 1fr;
+    /* Одна равная ширина столбца */
+    grid-template-rows: auto auto 1fr auto;
+    /* Автоматическая высота для header и footer, остальное занимает оставшееся пространство */
+    gap: 10px;
+    /* Расстояние между элементами */
+}
+
+/* Медиа-запрос для планшетов и больших экранов */
+@media screen and (min-width: 768px) {
+    .container {
+        grid-template-areas:
+            "image info"
+            "contacts info"
+            "projects projects";
+        grid-template-columns: 1fr 3fr;
+        /* Боковая панель будет шире */
+        grid-template-rows: auto 1fr auto;
+    }
+}
+
+/* Медиа-запрос для больших экранов */
+@media screen and (min-width: 1024px) {
+    .container {
+        grid-template-areas:
+            "image info"
+            "contacts info"
+            "projects projects";
+        grid-template-columns: 1fr 2fr;
+        /* Боковая панель будет еще шире */
+        grid-template-rows: auto 1fr auto;
+    }
+}
+
+#image {
+    grid-area: image;
+    width: 300px;
+}
+#contacts {
+    grid-area: contacts;
+}
+#info {
+    grid-area: info;
+}
+#projects {
+    grid-area: projects;
+}
+.contact {
+    vertical-align: middle;
+
+}
+.contact img {
+    width: 16pt;
+
+}
+.contact svg {
+    width: 16pt;
+}
+.contact a {
+    font-size: 16pt;
+    text-decoration: none;
+}
+
+.project-container {
+    border-style: solid;
+    border-radius: 10px;
+    border: 1px;
+    border-color: var(--color-contrast);
+}
+.project-title {
+    vertical-align: middle;
+}
+.project-title a {
+    font-size: 20pt;
+    text-decoration: none;
+}
+.project-title img {
+    width: 30px;
+    height: auto;
+}
+.project-title svg {
+    width: 30px;
+    height: auto;
+}
+.project-description {
+
+}
+.project-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.project-gallery img {
+    margin: 5px;
+
+    border-style: none;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+}
+.project-gallery iframe {
+    margin: 5px;
+
+    border-style: none;
+    width: 100%;
+    max-width: 480px;
+    height: 270px;
 }

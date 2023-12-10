@@ -10,6 +10,12 @@ body {
     color: var(--color-contrast);
 }
 
+h1 {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 24pt;
+}
+
 /* Anchor decoration */
 a:link {
     color: var(--color-contrast);
@@ -123,16 +129,18 @@ a:active {
     align-items: center;
   }
   #menu-toggle ~ .menu li {
+    visibility: hidden;
     opacity: 0;
     height: 0;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
   #menu-toggle:checked ~ .menu li {
+    visibility: visible;
     opacity: 1;
     border: 1px solid #333;
     height: 2.5em;
     padding: 0.5em;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
   .menu > li {
     display: flex;
@@ -192,4 +200,8 @@ a:active {
 /* selected link */
 .menu a:active {
     color: var(--color-contrast);
+}
+
+.icon {
+  width: 28px;
 }
