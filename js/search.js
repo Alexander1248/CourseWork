@@ -3,19 +3,19 @@ var pages = {
         "vs.html", 
         "https://upload.wikimedia.org/wikipedia/commons/2/2c/Visual_Studio_Icon_2022.svg",
         "Microsoft", [
-            "C", "C++", "C#", "F#", "HTML", "CSS", "JavaScript"
+            "C", "C++", "C#", "F#"
         ]],
     "VS Code" : [
-        "vscode.html", 
+        "vs_code.html", 
         "https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg",
         "Microsoft", [
-            "C", "C++", "C#", "CUDA", "Java", "HTML", "CSS", "JavaScript"
+            "C", "C++", "C#", "CUDA", "F#", "Java", "Kotlin", "Python", "Ruby", "HTML", "CSS", "JavaScript"
         ]],
     "Intellij IDEA" : [
         "intellij.html",
         "https://upload.wikimedia.org/wikipedia/commons/9/9c/IntelliJ_IDEA_Icon.svg",  
         "Jet Brains", [
-            "Java", "Kotlin", "Python", "Ruby", "HTML", "CSS", "JavaScript"
+            "Java", "Kotlin"
         ]]
 };
 
