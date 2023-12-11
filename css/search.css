@@ -1,5 +1,9 @@
 @import url("universal.css");
 
+footer {
+    margin: 10px;
+}
+
 /* Grid layout */
 /* Установим стили по умолчанию для контейнера */
 .container {
@@ -11,6 +15,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 1fr auto;
     gap: 10px;
+    margin: 10px;
 }
 
 /* Медиа-запрос для планшетов и больших экранов */
