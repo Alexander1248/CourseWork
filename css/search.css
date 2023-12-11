@@ -103,6 +103,8 @@
     border-radius: 20px;
     margin-left: 10px;
     font-size: 20px;
+    
+    font-family: var(--font);
 }
 
 
@@ -148,6 +150,7 @@
     border-width: 2px;
 }
 
+
 .result-block {
     background-color: transparent;
     color: white;
@@ -174,7 +177,9 @@
 #filtered-page-list:has(> .result-block:hover) > .result-block:not(.result-block:hover) {
     filter: blur(3px);
 }
-
+.result-block {
+    font-family: var(--font);
+}
 .result-block:hover {
     transform: scale(1.01);
 }
