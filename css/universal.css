@@ -1,7 +1,6 @@
 body {
     --dark-blue: hsl(227, 100%, 13%);
-    --blue: hsl(242, 100%, 64%);
-    --light-blue: hsl(192, 100%, 64%);
+    --blue: hsl(347, 99%, 59%);
     --lavender: hsl(242, 100%, 74%);
     --red: hsl(0, 100%, 38%);
     --dark-red: hsl(0, 100%, 25%);
@@ -11,12 +10,21 @@ body {
 
     background-color: var(--dark-blue);
     color: var(--white);
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 h1 {
   vertical-align: middle;
   text-align: center;
   font-size: 24pt;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 /* Anchor decoration */
@@ -46,7 +54,7 @@ a:active {
     align-items: center;
     justify-content: space-between;
     background-color: var(--dark-blue);
-    background: linear-gradient(to right, var(--blue), var(--dark-blue));
+    background: linear-gradient(in hsl to right, var(--blue), var(--dark-blue));
     color: white;
     height: 30px;
     padding: 0.6em 1em;

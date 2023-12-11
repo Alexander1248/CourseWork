@@ -8,7 +8,7 @@
 }
 
 .post {
-    background-image: linear-gradient(to top, var(--dark-blue) 0%, var(--blue) 100%);
+    background-image: linear-gradient(in hsl to top, var(--dark-blue) 0%, var(--lavender) 100%);
     width: 20rem;
     height: auto;
     padding: 10px;
